@@ -1,0 +1,65 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+  <ion-img src="assets/icon/image.png" />
+  </div>
+  <div class="sign-up">
+
+    <p> SignUp</p>
+   
+  </div>
+  <form [formGroup]="regForm" novalidate>
+    <div >
+      <ion-item>
+        <div>
+        <ion-input placeholder="username"></ion-input>
+        
+      </div>
+      </ion-item>
+      <div >
+      
+    </div>
+   
+
+
+      <ion-item>
+        <div >
+        <ion-input placeholder="email"></ion-input>
+    
+      </div>
+      </ion-item>
+      <div>
+        <ion-text>
+
+        </ion-text>
+      </div>
+      <ion-item>
+        <div >
+        <ion-input placeholder="password" ></ion-input>
+        
+      </div>
+      </ion-item>
+      <ion-item>
+        <div >
+        <ion-input placeholder=" confirm password" ></ion-input>
+        
+      </div>
+      </ion-item>
+     
+    <div class="lp">
+      <p> Already a member ?<a style="color: #3fff62;"  [routerLink]="['/login']"> SignIn  </a></p>
+    </div>
+      
+      
+
+    </div>
+    <div>
+    <ion-button  class="custom-button"  expand="block"
+      style="border-radius: 35px; height: 45px; width: 299px;"
+      [routerLink]="['/home']">
+      <span class="sign-in-text"> create acount</span>
+    
+    </ion-button>
+  </div>
+
+  </form>
+</ion-content>
