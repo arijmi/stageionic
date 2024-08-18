@@ -1,13 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>verificationemail</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">verificationemail</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-title>
+    <div class="frgtpass-container">
+    <ion-img src="assets/icon/image3.png" /></div>
+    <p class="forgot-password">Verification Email </p>
+
+  </ion-title>
+  <div class="verification-text">
+    Please enter your Email Address To Receive a Verification code
+  </div>
+  <div class="component-3">
+    <ion-img src="assets/icon/image.png" /></div>
+    <ion-button  class="custom-button"  expand="block"
+    style="border-radius: 35px; height: 45px; width: 299px;"
+    [routerLink]="['/newpass']">
+    <span class="sign-in-text"> verify</span>
+  
+  </ion-button>
+
+ 
 </ion-content>
