@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+ 
+    <ion-title> notification settings</ion-title>
+ 
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Reminder Time</ion-label>
+    <ion-select [(ngModel)]="reminderTime">
+      <ion-select-option value="3600000">1 Hour Before</ion-select-option>
+      <ion-select-option value="1800000">30 Minutes Before</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button (click)="savePreferences()">Save Preferences</ion-button>
+</ion-content>

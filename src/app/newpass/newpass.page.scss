@@ -1,0 +1,70 @@
+ion-content {
+    --background: #FFFFFF;
+  }
+  
+  .frgtpass-container {
+    position: absolute;
+    width: 234px;
+    height: 218px;
+    left: 100px;
+    top: 30px;
+    background: url('/assets/image.png') no-repeat center center;
+    background-size: cover;
+  }
+  .create-password-title {
+    font-family: 'Mplus 1p Bold', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+
+  
+  .pass-image {
+    width: 217px;
+    height: 181px;
+    background: url('/assets/pass.png') no-repeat center/contain;
+    margin: 20px auto; /* Center the image */
+  }
+  
+  .input-item {
+    background: #F8F8F8;
+    border: 1px solid #99E89D;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-left: 16px;
+  }
+  
+  .custom-button {
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 16px;
+  
+    /* Positioning */
+    position: absolute;
+    width: 299px;
+    height: 45px;
+    left: 50px;
+    top: 500px;
+  
+    /* Styling */
+    background: #4DA768;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+  
+    /* Remove default styles */
+    --padding-start: 0;
+    --padding-end: 0;
+    --border-radius: 35px;
+    --background: #4DA768;
+    --color: #FFF5F5;
+  }
+  

@@ -1,19 +1,9 @@
-.input{
-    font-size: 300;
 
-
-}
-ion-item{
-    --background:#f1f1f1;
-    border-radius: 10px;
-    margin-bottom: 16px;
-
-}
 .header{
     margin-top: 100px;
     margin-bottom: 80px;
     text-align: center;
-    .subTitle{
+.subTitle{
         color: green;
         font-size: 0.9;
     }
@@ -44,11 +34,23 @@ ion-item{
 }
 .forgotpassword{
     display: flex;
-    justify-content: center;
+    justify-content:right;
     a{
         font-weight: 400;
         font-size: 0.8rem;
         text-decoration: none;
+        text-align: left;
     }
+
+}
+.input{
+    font-size: 300;
+
+
+}
+ion-item{
+    --background:#f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 16px;
 
 }

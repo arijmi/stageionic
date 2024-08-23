@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'newpass',
     loadChildren: () => import('./newpass/newpass.module').then( m => m.NewpassPageModule)
   },
+  {
+    path: 'events',
+    loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+  },
 ];
 
 @NgModule({

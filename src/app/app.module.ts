@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from'@angular/fire/compat';
 import { AngularFireAuthModule } from'@angular/fire/compat/auth';
 import { environment } from'../environments/environment';
+import { PushNotifications } from '@capacitor/push-notifications';
+import { LocalNotifications } from '@capacitor/local-notifications';
 
 @NgModule({
   declarations: [AppComponent],
