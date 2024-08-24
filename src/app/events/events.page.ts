@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NotificationService } from 'src/app/notification.service';
-import { Event } from 'src/app/events/events.module';
+
 
 @Component({
   selector: 'app-events',
@@ -13,16 +13,7 @@ export class EventsPage {
 
   ngOnInit() {
   }
-  onEventCreated(event:Event) {
-    this.notificationService.scheduleReminder(event);
-  }
-  onEventUpdated(event: Event) {
-    if (event.timeChanged) {
-      this.notificationService.sendLastMinuteChangeNotification(event);
-    }
-  }
+  
+
 
 }
-
-
-

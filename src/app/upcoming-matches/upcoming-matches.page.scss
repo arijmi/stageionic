@@ -1,0 +1,31 @@
+ion-header {
+    --background: #0eba53;
+  }
+  
+  ion-item {
+    --background: #0eba53;
+  }
+  ion-button {
+    --background: #3880ff; /* Set the background color */
+    --color: #fff; /* Set the text color */
+    --border-radius: 8px; /* Rounded corners */
+    --padding-start: 16px; /* Left padding */
+    --padding-end: 16px; /* Right padding */
+    --padding-top: 8px; /* Top padding */
+    --padding-bottom: 8px; /* Bottom padding */
+  
+    /* Optional: Add a shadow for a 3D effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    /* Optional: Change the button color on hover */
+    &:hover {
+      --background: #007aff;
+      --color: #fff;
+    }
+  }
+  
+  /* Style for the button when it’s disabled */
+  ion-button[disabled] {
+    --background: #dcdcdc; /* Light gray background */
+    --color: #a0a0a0; /* Gray text color */
+  }

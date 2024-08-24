@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Upcoming Matches</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Filter by Location</ion-label>
+    <ion-select [(ngModel)]="selectedLocation" (ionChange)="filterdMatches()">
+      <ion-select-option value="all">All</ion-select-option>
+      <ion-select-option value="area1">Area 1</ion-select-option>
+      <ion-select-option value="area2">Area 2</ion-select-option>
+    </ion-select>
+    </ion-item>
+    <ion-list>
+      <ion-item *ngFor="let match of filteredMatches">
+        <ion-label>
+          <h2>{{ match.name }}</h2>
+          <p>{{ match.date }}</p>
+          <p>{{ match.location }}</p>
+          <p>Venue: {{ match.venue }}</p>
+        <p>Date & Time: {{ match.dateTime | date:'fullDate' }}</p>
+        </ion-label>
+        <ion-button (click)="registerForMatch(match)">Join</ion-button>
+        <ion-button (click)="openDirections(match)">Get Directions</ion-button>
+      </ion-item>
+      
+    </ion-list>
+</ion-content>
