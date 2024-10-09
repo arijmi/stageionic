@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform } from '@ionic/angular';
+import { MenuController, Platform } from '@ionic/angular';
 import { PushNotifications } from '@capacitor/push-notifications';
 
 @Component({
@@ -8,8 +8,13 @@ import { PushNotifications } from '@capacitor/push-notifications';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private platform: Platform) {
+
+  
+  constructor(private platform: Platform,private menu: MenuController) {
     this.initializeApp();
+  }
+  closeMenu() {
+    this.menu.close();
   }
   initializeApp() {
     this.platform.ready().then(() => {

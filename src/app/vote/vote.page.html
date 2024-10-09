@@ -4,12 +4,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-list>
-    <ion-item *ngFor="let player of players">
-      <ion-label>{{ player.name }}</ion-label>
-      <ion-radio slot="start" [(ngModel)]="selectedPlayer" [value]="player.id"></ion-radio>
-    </ion-item>
+    <ion-radio-group [(ngModel)]="selectedPlayer">
+      <ion-item *ngFor="let player of players">
+        <ion-label>{{ player.name }}</ion-label>
+        <ion-radio slot="start" [value]="player.id"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
   </ion-list>
   <ion-button expand="full" (click)="submitVote()">Submit Vote</ion-button>
 </ion-content>
+

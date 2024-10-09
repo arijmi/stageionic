@@ -1,0 +1,71 @@
+/* Sidebar */
+.sidebar {
+    position: relative;
+    width: 212px;
+    height: 10vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out elements */
+  }
+  
+  /* Rectangle Background */
+  .rectangle-3126 {
+    background: #fdfdfd; /* Background color */
+    flex-grow: 1; /* Take up remaining space */
+  }
+  
+  /* Profile Image */
+  .ellipse-6 {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    margin: 20px auto; /* Centered horizontally */
+  }
+  
+  /* User Name */
+  .nomprofil {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  /* Email */
+  .email {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    opacity: 0.5;
+    margin: 10px 0; /* Add some spacing */
+  }
+  
+  /* Logout Group */
+  .logout {
+  
+    margin-top: 300px;
+    left: 7.08%;
+    bottom: 4.5%;
+    display: flex;
+    align-items: center;
+
+    .ion-icon {
+      margin-right: 8px; /* Space between icon and text */
+    }
+
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #575656;
+  }
+  .email-icon {
+
+    top: 20%;  // Adjust as needed
+    
+    color: #2A2E3B; // Change color if desired
+   
+  
+  }
+
+ 
+  

@@ -26,10 +26,10 @@ export class UpcomingMatchesPage{
 
 
   filterdMatches() {
-    if (this.selectedLocation === 'all') {
+    if (this.selectedLocation == 'all') {
       this.filteredMatches = [...this.matches];
     } else {
-      this.filteredMatches = this.matches.filter(match => match.location === this.selectedLocation);
+      this.filteredMatches = this.matches.filter(match => match.location == this.selectedLocation);
     }
   }
   async registerForMatch(match: any) {

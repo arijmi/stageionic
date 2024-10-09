@@ -1,26 +1,35 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-
-
+import { VoteService } from '../vote.service';
 @Component({
   selector: 'app-vote',
   templateUrl: './vote.page.html',
   styleUrls: ['./vote.page.scss'],
 })
-export class VotePage {
+export class VotePage implements OnInit {
+
   players = [
     { id: 1, name: 'Player 1' },
     { id: 2, name: 'Player 2' },
-    // Add more players
-  ];
-  selectedPlayer: number | null = null; // Initialize with null
+    { id: 3, name: 'Player 3' },
+  ]; 
+  selectedPlayer: number | null = null; // Ensure initialization
 
-  constructor() {}
-
+  constructor(private voteService: VoteService) {}
+  ngOnInit(): void {
+    // Initialize any additional data if necessary
+  }
   submitVote() {
-    if (this.selectedPlayer !== null) { // Ensure selectedPlayer is not null
-      console.log('Vote submitted for player ID:', this.selectedPlayer);
-      // Handle the vote submission logic here
+    if (this.selectedPlayer !== null) {
+      this.voteService.submitVote(this.selectedPlayer).subscribe({
+        next: (response) => {
+          console.log('Vote submitted successfully:', response);
+          // Handle the response, like showing a confirmation message
+        },
+        error: (error) => {
+          console.error('Error submitting vote:', error);
+          // Handle errors
+        }
+      });
     } else {
       console.log('No player selected');
     }

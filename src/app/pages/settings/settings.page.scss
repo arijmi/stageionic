@@ -1,0 +1,53 @@
+.component-6 {
+    width: 500px; /* Set width */
+    height: 100%;
+    margin: 16px; /* Margin to separate from other elements */
+    background: #FFFFFF; /* Background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+  
+    ion-list {
+      padding: 0px; /* Remove default padding */
+    }
+  
+    ion-item {
+      height: 83px; /* Set height for each item */
+      display: flex; /* Use flexbox for item layout */
+      align-items: center; /* Center content vertically */
+      justify-content: flex-start; /* Align items to the start */
+      
+      ion-icon {
+        margin-right: 10px; /* Space between icon and label */
+      }
+  
+      ion-label {
+        font-size: 16px; /* Font size for the label */
+      }
+    }
+  }
+  .navbar {
+    display: flex;
+    justify-content: center; // Center all buttons in the toolbar
+    align-items: center; // Center items vertically
+    padding: 10px 0; // Adjust padding as needed
+    background: #FFFFFF; // Background color for the footer
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); // Shadow for depth
+    border-radius: 10px; // Rounded corners
+  }
+  
+  .icon-buttons {
+    display: flex; // Use flexbox to organize buttons
+    justify-content: space-between; // Evenly space buttons
+    width: 100%; // Make buttons take full width
+  }
+  
+  ion-button {
+    flex: 1; // Each button will take equal space
+    text-align: center; // Center icon inside button
+  }
+  
+  ion-icon {
+    font-size: 24px; // Adjust icon size
+    color: #F1582D; // Set your desired icon color
+  }
+    

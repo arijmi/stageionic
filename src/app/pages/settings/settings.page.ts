@@ -22,4 +22,9 @@ export class SettingsPage{
   ionViewDidEnter() {
     this.loadPreferences();
   }
+  notifications = [
+    { title: 'New Message', message: 'You have received a new message.' },
+    { title: 'Update Available', message: 'A new update is available for download.' },
+    { title: 'System Alert', message: 'Your account settings have been updated.' },
+  ];
 }

@@ -5,3 +5,107 @@ width: 390px;
 height:900px;
 
 background: #99E89D;}
+.ellipse-6{
+    position: absolute;
+    left: 60.08%;
+    top: 4.98%;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+
+}
+.custom-component {
+    position: absolute;
+    width: 225px;       // Width of the component
+    height: 130px;      // Height of the component
+    left: 19px;         // Horizontal position from the left
+    margin-top: 4px;         // Vertical position from the top
+    background-color: #ffffff; // Background color
+    border: 1px solid #cccccc; // Optional border for styling
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Optional shadow for depth
+    padding: 10px;      // Padding inside the component
+    border-radius: 8px; // Rounded corners
+    z-index: 10;        // Ensure the component is on top if necessary
+  }
+  .input-variant {
+    box-sizing: border-box;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 16px;
+  
+    position: absolute;
+    width: 352px;           // Width of the input container
+    height: 49px;           // Height of the input container
+    left: 50px;             // Horizontal position from the left
+    top: 249px;             // Vertical position from the top
+  
+    background: #F8F8F8;    // Background color
+    border: 1px solid #99E89D; // Border color and style
+    border-radius: 15px;    // Rounded corners
+  
+    /* Style the input field */
+    input {
+      flex: 1;              // Allow the input to grow to fill the container
+      border: none;         // Remove default input border
+      background: transparent; // Make background transparent to show container
+      outline: none;        // Remove outline on focus
+      padding: 0;          // Remove padding to fit nicely
+      font-size: 16px;      // Set font size for input text
+    }
+    
+  }
+  .component16 {
+    position: absolute;
+    width: 362px;            // Set width as specified
+    height: 184px;           // Set height as specified
+    left: 130px;              // Position from the left
+    margin-top: 320px;              // Position from the top
+  
+    background: #FFFFFF;     // Optional: Background color
+   // Optional: Shadow for depth
+    border-radius: 10px;     // Optional: Rounded corners
+  
+    padding: 16px;           // Optional: Inner padding for content
+    
+    h2 {
+      margin: 0;             // Remove default margin for h2
+      font-size: 20px;       // Set font size for title
+    }
+  
+    p {
+      margin: 8px 0 0;       // Set margin for paragraph
+      font-size: 16px;       // Set font size for description
+      color: #333;           // Optional: Text color
+    }
+  }
+/* Navbar styling */
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center; // Center all buttons in the toolbar
+    align-items: center; // Center items vertically
+    padding: 10px 0; // Adjust padding as needed
+    background: #FFFFFF; // Background color for the footer
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); // Shadow for depth
+    border-radius: 10px; // Rounded corners
+  }
+  
+  .icon-buttons {
+    display: flex; // Use flexbox to organize buttons
+    justify-content: space-between; // Evenly space buttons
+    width: 100%; // Make buttons take full width
+  }
+  
+  ion-button {
+    flex: 1; // Each button will take equal space
+    text-align: center; // Center icon inside button
+  }
+  
+  ion-icon {
+    font-size: 24px; // Adjust icon size
+    color: #F1582D; // Set your desired icon color
+  }
+  
